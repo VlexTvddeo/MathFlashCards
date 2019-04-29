@@ -1,1 +1,33 @@
-//css file
+h1 {
+  text-align: center;
+ margin-top: 50px;
+  margin-bottom: -45px;
+  font-size: 100px;
+}
+h2{
+  border: 10px;
+}
+h4 {
+  text-align: center;
+  font-size: 25px;
+}
+h6 {
+  margin-top: 75px;
+  margin-right: 400px;
+  margin-left: 400px;
+  text-align: center;
+  font-size: 20px;
+}
+button{
+  width: 200px;
+  height: 100px;
+  font-size: 50px;
+  background: #F0F8FF;
+  color:#404443;
+}
+button:hover{
+  color: #4c79aa;
+}
+.start{
+margin-left:665px;  
+}
