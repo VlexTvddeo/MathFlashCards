@@ -3,6 +3,7 @@ h1 {
  margin-top: 50px;
   margin-bottom: -45px;
   font-size: 100px;
+  text-shadow: 6px -6px #595959;
 }
 h2{
   border: 10px;
@@ -30,4 +31,13 @@ button:hover{
 }
 .start{
 margin-left:665px;  
+}
+.plus .minus{
+  visibility: hidden;
+}
+.timertings{
+  font-size: 80px;
+  border-radius: 5px;
+  border-style: double;
+  width: 100px;
 }
