@@ -5,9 +5,10 @@ var numOne;
 var numTwo;
 var addSub;
 var answer;
-
+var ansGiven;
 
 var time = 20;
+
 function start(){
 var timeleft = 19;
 var downloadTimer = setInterval(function(){
@@ -15,15 +16,14 @@ var downloadTimer = setInterval(function(){
   timeleft -= 1;
   if(timeleft <= 0){
     clearInterval(downloadTimer);
-    document.getElementById("countdown").innerHTML = "Finished";
+    document.getElementById("countdown").innerHTML = "0";
+  }
+  function startv2(){
+    
   }
 }, 1000);
 }
 
 function adding(){
   var answer= numOne+numTwo;
-}
-
-function subtracting(){
-  var answer=numOne-numTwo;
 }
