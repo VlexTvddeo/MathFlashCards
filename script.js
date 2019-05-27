@@ -19,11 +19,32 @@ function seeCard() {
   document.getElementById("ele").style.cssText = 'width: 400';
 }
 
-//run timer down to 0
+//disapear text
+function hideIntro() {
+  document.getElementById("intro").style.cssText = 'opacity: 0';
+}
+
+//hide numbers
+function hidenum() {
+  document.getElementById("numOne").style.cssText = 'opacity: 1';
+}
+
+function hidenum2() {
+  document.getElementById("numTwo").style.cssText = 'opacity: 1';
+}
+function hidenum3() {
+  document.getElementById("ad").style.cssText = 'opacity: 1';
+}
+//run timer down to 0 and hide/ show stuff
 function start(){
 var timeleft = 19;
 butDis ();
 seeCard ();
+hideIntro ();
+hidenum ();
+hidenum2 ();
+hidenum3 ();
+randoNum();
 var downloadTimer = setInterval(function(){
   document.getElementById("countdown").innerHTML = timeleft;
   timeleft -= 1;
@@ -36,11 +57,28 @@ var downloadTimer = setInterval(function(){
 
 //random number generator
 function randoNum() {
-  return Math.floor(Math.random(0-9));
-  var numOne = randoNum
+  document.getElementById("numOne").innerHTML = Math.floor(Math.random(0-9));
 }
 
 //adding numbers
 function adding(){
   var answer= numOne+numTwo;
+}
+
+//check answer--from excercise files
+function ansCheck() {
+    let textEntered = textarea.value;
+    let originTextMatch = originText.substring(0,textEntered.length);
+
+    if (textEntered == originText) {
+
+
+    } else {
+        if (textEntered == originTextMatch) {
+
+        } else {
+
+        }
+    }
+
 }
