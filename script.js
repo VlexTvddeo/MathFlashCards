@@ -35,6 +35,9 @@ function hidenum2() {
 function hidenum3() {
   document.getElementById("ad").style.cssText = 'opacity: 1';
 }
+function hidenum4() {
+  document.getElementById("box").style.cssText = 'opacity: 1';
+}
 //run timer down to 0 and hide/ show stuff
 function start(){
 var timeleft = 19;
@@ -45,6 +48,7 @@ hidenum ();
 hidenum2 ();
 hidenum3 ();
 randoNum();
+hidenum4();
 var downloadTimer = setInterval(function(){
   document.getElementById("countdown").innerHTML = timeleft;
   timeleft -= 1;
