@@ -49,9 +49,14 @@ hidenum2 ();
 hidenum3 ();
 randoNum();
 hidenum4();
+    //from stackoverflow.com/questions/4435776/simple-clock-that-counts-down-from-30-seconds-and-executes-a-function-afterward
+    //creates var
 var downloadTimer = setInterval(function(){
+    //gets the 20 sec from html
   document.getElementById("countdown").innerHTML = timeleft;
+    //runs down timer 
   timeleft -= 1;
+    //stops at 0
   if(timeleft <= 0){
     clearInterval(downloadTimer);
     document.getElementById("countdown").innerHTML = "0";
